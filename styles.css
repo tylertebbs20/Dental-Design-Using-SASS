@@ -1,7 +1,17 @@
-/*Responsive Desive*/
+/*Responsive Design*/
 @media screen and (max-width: 1999px) {
   .main {
     width: 100%; } }
+/*Clear float*/
+.clear:before,
+.clear:after {
+  content: " ";
+  display: table; }
+
+.clear:after {
+  clear: both; }
+
+/*Home Page */
 /*Main Container*/
 .main {
   background-color: #005AA3;
@@ -14,26 +24,26 @@
   height: 40px;
   font-size: 13px;
   color: white; }
-  .header .topMiddleLeftspace {
+  .header .topMiddleLeftHeader {
     width: 45%;
     float: left;
     height: 40px;
     margin-left: 20%; }
-    .header .topMiddleLeftspace .address {
+    .header .topMiddleLeftHeader .address {
       float: left;
       margin-left: 10%; }
-    .header .topMiddleLeftspace .phoneNumber {
+    .header .topMiddleLeftHeader .phoneNumber {
       float: left;
       margin-left: 8%; }
-  .header .topMiddleRightspace {
+  .header .topMiddleRightHeader {
     width: 35%;
     float: right;
     height: 40px; }
-    .header .topMiddleRightspace .tumblr, .header .topMiddleRightspace .facebook, .header .topMiddleRightspace .youtube, .header .topMiddleRightspace .linkedin {
+    .header .topMiddleRightHeader .tumblr, .header .topMiddleRightHeader .facebook, .header .topMiddleRightHeader .youtube, .header .topMiddleRightHeader .linkedin {
       float: left;
       margin-left: 1%;
       margin-top: 1%; }
-    .header .topMiddleRightspace .facebook {
+    .header .topMiddleRightHeader .facebook {
       margin-top: 2%; }
 
 /*Middle Area*/
@@ -60,12 +70,25 @@
         .middle .middleCenter .navigation nav a {
           margin-left: 4%;
           text-decoration: none; }
+    .middle .middleCenter .headerImg {
+      margin-left: 6%;
+      margin-top: 5%; }
 
 .middle:after {
   clear: both; }
 
 .navigation:after {
   clear: both; }
+
+/*Section 2*/
+.section2 .section2a {
+  float: left; }
+  .section2 .section2a img {
+    float: left; }
+.section2 .section2b {
+  float: left; }
+.section2 .section2c {
+  float: left; }
 
 /*Bottom Area*/
 .bottom {

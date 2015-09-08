@@ -1,4 +1,4 @@
-/*Responsive Desive*/
+/*Responsive Design*/
 
 @media screen and (max-width:1999px){
 	.main{
@@ -6,6 +6,18 @@
 	}
 }
 
+/*Clear float*/
+.clear:before,
+.clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+/*Home Page */
 $primary-color: #005AA3;
 $secondary-color: white;
 
@@ -17,59 +29,7 @@ $secondary-color: white;
 }
 
 /*header*/
-
-$header-color: #004E8E;
-$header-height: 40px;
-.header {
-	background-color: $header-color;
-	height: $header-height;
-	font-size: 13px;
-	color: white;
-
-
-	.topMiddleLeftspace {
-		width: 45%;
-		float: left;
-		height: $header-height;
-		margin-left: 20%;
-
-		.address {
-			float: left;
-			margin-left: 10%;
-		}
-
-		.phoneNumber {
-			float: left;
-			margin-left: 8%
-		}
-	}
-
-	.topMiddleRightspace {
-		width: 35%;
-		float: right;
-		height: $header-height;
-
-		.tumblr {
-			float: left;
-			margin-left: 1%;
-			margin-top: 1%;
-		}
-
-		.facebook {
-			margin-top: 2%;
-			@extend .tumblr
-		}
-
-		.youtube {
-			@extend .tumblr
-		}
-
-		.linkedin {
-			@extend .tumblr
-		}
-	}
-
-}
+@import 'header';
 
 /*Middle Area*/
 
@@ -107,6 +67,11 @@ $header-height: 40px;
 			}
 			
 		}
+
+		.headerImg {
+			margin-left: 6%;
+    		margin-top: 5%;
+		}
 	}
 }
 
@@ -114,9 +79,33 @@ $header-height: 40px;
    clear: both;
 }
 
+
 .navigation:after {
 	clear: both;
 }
+
+/*Section 2*/
+
+.section2{
+	.section2a {
+		float: left;
+
+		img {
+			float: left;
+		}
+	}
+
+	.section2b {
+		float: left;
+	}
+
+	.section2c {
+		float: left;
+	}
+
+}
+
+
 
 /*Bottom Area*/
 .bottom {

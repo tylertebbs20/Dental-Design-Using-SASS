@@ -1,0 +1,52 @@
+$header-color: #004E8E;
+$header-height: 40px;
+.header {
+	background-color: $header-color;
+	height: $header-height;
+	font-size: 13px;
+	color: white;
+
+
+	.topMiddleLeftHeader {
+		width: 45%;
+		float: left;
+		height: $header-height;
+		margin-left: 20%;
+
+		.address {
+			float: left;
+			margin-left: 10%;
+		}
+
+		.phoneNumber {
+			float: left;
+			margin-left: 8%
+		}
+	}
+
+	.topMiddleRightHeader {
+		width: 35%;
+		float: right;
+		height: $header-height;
+
+		.tumblr {
+			float: left;
+			margin-left: 1%;
+			margin-top: 1%;
+		}
+
+		.facebook {
+			margin-top: 2%;
+			@extend .tumblr
+		}
+
+		.youtube {
+			@extend .tumblr
+		}
+
+		.linkedin {
+			@extend .tumblr
+		}
+	}
+
+}
