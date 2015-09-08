@@ -1,0 +1,74 @@
+/*Responsive Desive*/
+@media screen and (max-width: 1999px) {
+  .main {
+    width: 100%; } }
+/*Main Container*/
+.main {
+  background-color: #005AA3;
+  height: 1000px;
+  width: 2000px; }
+
+/*header*/
+.header {
+  background-color: #004E8E;
+  height: 40px;
+  font-size: 13px;
+  color: white; }
+  .header .topMiddleLeftspace {
+    width: 45%;
+    float: left;
+    height: 40px;
+    margin-left: 20%; }
+    .header .topMiddleLeftspace .address {
+      float: left;
+      margin-left: 10%; }
+    .header .topMiddleLeftspace .phoneNumber {
+      float: left;
+      margin-left: 8%; }
+  .header .topMiddleRightspace {
+    width: 35%;
+    float: right;
+    height: 40px; }
+    .header .topMiddleRightspace .tumblr, .header .topMiddleRightspace .facebook, .header .topMiddleRightspace .youtube, .header .topMiddleRightspace .linkedin {
+      float: left;
+      margin-left: 1%;
+      margin-top: 1%; }
+    .header .topMiddleRightspace .facebook {
+      margin-top: 2%; }
+
+/*Middle Area*/
+.middle {
+  background-color: #005AA3;
+  clear: both;
+  height: 900px; }
+  .middle .middleCenter {
+    width: 50%;
+    margin-left: 24%;
+    background-color: white;
+    height: 900px; }
+    .middle .middleCenter .navigation {
+      height: 70px; }
+      .middle .middleCenter .navigation .logo {
+        float: left;
+        margin-top: 2%; }
+      .middle .middleCenter .navigation nav {
+        float: left;
+        margin-left: 1%;
+        margin-top: 4%;
+        font-size: 23px;
+        width: 65%; }
+        .middle .middleCenter .navigation nav a {
+          margin-left: 4%;
+          text-decoration: none; }
+
+.middle:after {
+  clear: both; }
+
+.navigation:after {
+  clear: both; }
+
+/*Bottom Area*/
+.bottom {
+  clear: both; }
+
+/*# sourceMappingURL=styles.css.map */

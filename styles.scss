@@ -1,0 +1,124 @@
+/*Responsive Desive*/
+
+@media screen and (max-width:1999px){
+	.main{
+		width: 100%;
+	}
+}
+
+$primary-color: #005AA3;
+$secondary-color: white;
+
+/*Main Container*/
+.main {
+	background-color: $primary-color;
+	height: 1000px;
+	width: 2000px;
+}
+
+/*header*/
+
+$header-color: #004E8E;
+$header-height: 40px;
+.header {
+	background-color: $header-color;
+	height: $header-height;
+	font-size: 13px;
+	color: white;
+
+
+	.topMiddleLeftspace {
+		width: 45%;
+		float: left;
+		height: $header-height;
+		margin-left: 20%;
+
+		.address {
+			float: left;
+			margin-left: 10%;
+		}
+
+		.phoneNumber {
+			float: left;
+			margin-left: 8%
+		}
+	}
+
+	.topMiddleRightspace {
+		width: 35%;
+		float: right;
+		height: $header-height;
+
+		.tumblr {
+			float: left;
+			margin-left: 1%;
+			margin-top: 1%;
+		}
+
+		.facebook {
+			margin-top: 2%;
+			@extend .tumblr
+		}
+
+		.youtube {
+			@extend .tumblr
+		}
+
+		.linkedin {
+			@extend .tumblr
+		}
+	}
+
+}
+
+/*Middle Area*/
+
+.middle {
+	background-color: $primary-color;
+	clear: both;
+	height: 900px;
+
+	.middleCenter {
+		width: 50%;
+		margin-left: 24%;
+		background-color: $secondary-color;
+		height: 900px;
+
+		.navigation {
+			height: 70px;
+			
+
+			.logo{
+				float: left;
+				margin-top: 2%;
+			}
+
+			nav {
+			    float: left;
+			    margin-left: 1%;
+			    margin-top: 4%;
+			    font-size: 23px;
+			    width: 65%;
+
+    			a {
+    				margin-left: 4%;
+    				text-decoration: none;
+    			}
+			}
+			
+		}
+	}
+}
+
+.middle:after { 
+   clear: both;
+}
+
+.navigation:after {
+	clear: both;
+}
+
+/*Bottom Area*/
+.bottom {
+	clear: both;
+}
